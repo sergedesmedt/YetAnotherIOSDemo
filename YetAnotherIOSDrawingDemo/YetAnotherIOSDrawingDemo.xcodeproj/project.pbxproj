@@ -18,6 +18,8 @@
 		0B0A80B618FDB2B900C8D72A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B0A80B518FDB2B900C8D72A /* Images.xcassets */; };
 		0B0A80D318FDB60F00C8D72A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B0A80D218FDB60F00C8D72A /* Storyboard.storyboard */; };
 		0B0A80D618FDB7E700C8D72A /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0A80D518FDB7E700C8D72A /* DrawingView.m */; };
+		0B3EE3E11A34E99B0047EC5B /* TranformationPipelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3EE3E01A34E99B0047EC5B /* TranformationPipelineView.m */; };
+		0B3EE3E41A34EA290047EC5B /* TransformationPipelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3EE3E31A34EA290047EC5B /* TransformationPipelineViewController.m */; };
 		0BE676931900584C0080DAC2 /* DrawingViewConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE676921900584C0080DAC2 /* DrawingViewConfigController.m */; };
 		0BE676961905A09A0080DAC2 /* DrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE676951905A09A0080DAC2 /* DrawingViewController.m */; };
 		0BE67699190701250080DAC2 /* TransformationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE67698190701250080DAC2 /* TransformationView.m */; };
@@ -42,6 +44,10 @@
 		0B0A80D218FDB60F00C8D72A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		0B0A80D418FDB7E700C8D72A /* DrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
 		0B0A80D518FDB7E700C8D72A /* DrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingView.m; sourceTree = "<group>"; };
+		0B3EE3DF1A34E99B0047EC5B /* TranformationPipelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranformationPipelineView.h; sourceTree = "<group>"; };
+		0B3EE3E01A34E99B0047EC5B /* TranformationPipelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranformationPipelineView.m; sourceTree = "<group>"; };
+		0B3EE3E21A34EA290047EC5B /* TransformationPipelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationPipelineViewController.h; sourceTree = "<group>"; };
+		0B3EE3E31A34EA290047EC5B /* TransformationPipelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformationPipelineViewController.m; sourceTree = "<group>"; };
 		0BE676911900584C0080DAC2 /* DrawingViewConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingViewConfigController.h; sourceTree = "<group>"; };
 		0BE676921900584C0080DAC2 /* DrawingViewConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingViewConfigController.m; sourceTree = "<group>"; };
 		0BE676941905A0990080DAC2 /* DrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingViewController.h; sourceTree = "<group>"; };
@@ -111,6 +117,10 @@
 				0B09CDFB1A32489F003271AF /* TransformationViewController.m */,
 				0B09CDFD1A325B41003271AF /* TransformationViewConfigController.h */,
 				0B09CDFE1A325B41003271AF /* TransformationViewConfigController.m */,
+				0B3EE3DF1A34E99B0047EC5B /* TranformationPipelineView.h */,
+				0B3EE3E01A34E99B0047EC5B /* TranformationPipelineView.m */,
+				0B3EE3E21A34EA290047EC5B /* TransformationPipelineViewController.h */,
+				0B3EE3E31A34EA290047EC5B /* TransformationPipelineViewController.m */,
 			);
 			path = YetAnotherIOSDrawingDemo;
 			sourceTree = "<group>";
@@ -197,7 +207,9 @@
 				0B0A80B018FDB2B900C8D72A /* main.m in Sources */,
 				0B0A80D618FDB7E700C8D72A /* DrawingView.m in Sources */,
 				0BE67699190701250080DAC2 /* TransformationView.m in Sources */,
+				0B3EE3E11A34E99B0047EC5B /* TranformationPipelineView.m in Sources */,
 				0B09CDFC1A32489F003271AF /* TransformationViewController.m in Sources */,
+				0B3EE3E41A34EA290047EC5B /* TransformationPipelineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

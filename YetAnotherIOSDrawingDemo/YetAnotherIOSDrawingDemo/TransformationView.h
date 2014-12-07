@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Translation : NSObject
-
-@property (nonatomic) BOOL XTranslation;
-@property (nonatomic) BOOL YTranslation;
-
-@end
 
 @interface TransformationView : UIView
 

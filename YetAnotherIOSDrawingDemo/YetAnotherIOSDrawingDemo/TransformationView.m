@@ -27,22 +27,37 @@
 
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
-    // We must apply the transformation before giving the drawing instructions
-    //CGContextTranslateCTM (currentContext, 100, 50);
-    //CGAffineTransform transformation = CGAffineTransformMakeTranslation(100, 50);
-    CGAffineTransform transformation = CGAffineTransformMakeRotation(3.1415/4);
-    //CGContextConcatCTM ( currentContext, transformation );
-    
     // Set the properties of our pen
     CGContextSetLineWidth(currentContext, 1.0 );
     CGContextSetRGBStrokeColor(currentContext, 1.0, 0.0, 0.0, 1.0); // select red color
     
-    // Start constructing a path
-    // We are not yet drawing !!!
-    //if(self.DrawLine == TRUE)
+    // We must apply the transformation before giving the drawing instructions
+    //CGContextTranslateCTM (currentContext, 100, 50);
+    CGAffineTransform transformationToOrigin = CGAffineTransformMakeTranslation(100, 100);
+    CGContextConcatCTM ( currentContext, transformationToOrigin );
+    
+    CGAffineTransform transformationRotate = CGAffineTransformMakeRotation(-3.1415/4);
+    CGContextConcatCTM ( currentContext, transformationRotate );
+    
     {
-        CGContextMoveToPoint(currentContext, 10.0f, 10.0f);
-        CGContextAddLineToPoint(currentContext, 100.0f, 100.0f);
+        CGContextMoveToPoint(currentContext, 00.0f, 00.0f);
+        CGContextAddLineToPoint(currentContext, 00.0f, 100.0f);
+    }
+    
+    // Only here we effectively draw our path
+    CGContextStrokePath(currentContext);
+    
+    CGAffineTransform transformationRotateBack = CGAffineTransformMakeRotation(3.1415/4);
+    CGContextConcatCTM ( currentContext, transformationRotateBack );
+    
+    CGAffineTransform transformationTranslateBack = CGAffineTransformMakeTranslation(-100, -100);
+    CGContextConcatCTM (currentContext, transformationTranslateBack);
+
+    CGContextSetRGBStrokeColor(currentContext, 0.0, 0.0, 1.0, 1.0); // select blue color
+
+    {
+        CGContextMoveToPoint(currentContext, 100.0f, 100.0f);
+        CGContextAddLineToPoint(currentContext, 100.0f, 200.0f);
     }
     
     // Only here we effectively draw our path
