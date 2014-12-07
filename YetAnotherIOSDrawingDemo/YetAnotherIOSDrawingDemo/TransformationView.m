@@ -73,10 +73,8 @@
 
     CGContextSetRGBStrokeColor(currentContext, 0.0, 0.0, 1.0, 1.0); // select blue color
 
-    {
-        CGContextMoveToPoint(currentContext, 100.0f, 100.0f);
-        CGContextAddLineToPoint(currentContext, 100.0f, 200.0f);
-    }
+    CGContextMoveToPoint(currentContext, 100.0f, 100.0f);
+    CGContextAddLineToPoint(currentContext, 100.0f, 200.0f);
     
     // Only here we effectively draw our path
     CGContextStrokePath(currentContext);
